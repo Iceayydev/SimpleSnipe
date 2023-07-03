@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name SimpleSnipe
+// @name SimpleSnipehttps://github.com/Iceayydev/SimpleSnipe/blob/main/script.ts
 // @namespace http://tampermonkey.net/
 // @version 5.4.3
 // @description created better gui, major optimization improvements and better code readability. The next version (5.5) will include a rewrite of the sniping code, so fishcat wont be asocciated with simplesnipe. updates are in MAJOR, MINOR, PATCH format.
@@ -37,7 +37,7 @@ const guiStyles = {
   height: '400px',
   width: '280px',
   color: 'white',
-  background: 'linear-gradient(to bottom right, purple, blue)', // Change the colors!!!
+  background: 'linear-gradient(to bottom right, purple, blue)',
 };
 
 const buttonStyles = {
