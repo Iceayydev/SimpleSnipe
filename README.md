@@ -80,4 +80,6 @@ background: 'rgba(0, 0, 0, 0.5)', or background: 'radial-gradient(circle, color1
 You can change the **button thickness** and **color**, too. You can change the thickness by changing the `1px` value, and you can change the color by changing the `rgba` value.
 border: '1px solid rgba(0, 0, 0, 0.2)',
 
+### Texboxes support the same style configs as the Background and Buttons.
+
 Thats all!
