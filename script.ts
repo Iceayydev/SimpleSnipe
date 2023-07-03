@@ -23,6 +23,7 @@
 	  ==PATCH .4==
 - Added text box styles.
 - Fixed a console spam issue which caused minor preformance issues.
+
 */
 
 // GUI variables and styles
