@@ -15,37 +15,48 @@
 	==UPDATE NOTES==
 - Removed RGB background. Caused too many issues.
 - Fixed setting saving.
-- Fixed ignored variables
-- Improved readablity
+- Fixed ignored variables.
+- Improved readablity.
 - Reworked how some settings are handled. This is the first step to redoing the entire snipe code.
 
+	==UPDATE NOTES==
+	  ==PATCH .4==
+- Added text box styles.
+- Fixed a console spam issue which caused minor preformance issues.
 */
 
 // GUI variables and styles
 const guiStyles = {
-  position: 'fixed', // Reccomend do not edit.
+  position: 'fixed',
   top: '50%',
   left: '80%',
-  transform: 'translate(-50%, -50%)', // Reccomend do not edit.
-  border: '5px solid rgb(0, 0, 0)',
-  borderRadius: '10px',
-  padding: '20px', // Reccomend do not edit.
-  color: 'rgb(255, 255, 255)',
-  height: '325px',
+  transform: 'translate(-50%, -50%)',
+  border: '5px solid rgba(255, 255, 255, 1)',
+  borderRadius: '30px',
+  padding: '20px',
+  height: '400px',
   width: '280px',
-  background: 'linear-gradient(to bottom, purple, blue)',
+  color: 'white',
+  background: 'linear-gradient(to bottom right, purple, blue)', // Change the colors!!!
 };
 
 const buttonStyles = {
-  background: 'rgba(0, 0, 0, 0.5)',
-  border: '1px solid rgba(0, 0, 0, 0.2)',
+  background: 'rgba(255, 255, 255, 0.2)',
+  border: '3px solid rgba(255, 255, 255, 0.2)',
   display: 'inline-block',
   marginLeft: '5px',
+  color: 'white',
+  padding: '5px 10px',
 };
 
-/*
-        DO NOT EDIT ANYTHING PAST HERE UNLESS YOU KNOW WHAT YOU'RE DOING!
-*/
+const textboxStyles = {
+  background: 'rgba(255, 255, 255, 0.2)',
+  border: '1px solid rgba(255, 255, 255, 0.2)',
+  display: 'block',
+  marginTop: '5px',
+  padding: '5px',
+  color: 'white',
+};
 
 // Sniper variables
 let guiContainer;
@@ -99,7 +110,7 @@ function createGUI() {
 
   guiContainer.style.display = 'flex';
   guiContainer.style.flexDirection = 'column';
-  guiContainer.style.gap = '2px';
+  guiContainer.style.gap = '7px';
 
   document.body.appendChild(guiContainer);
 
@@ -155,12 +166,14 @@ function createCheckBox(checked, eventHandler) {
   return checkbox;
 }
 
+
 function createNumberInput(value, minValue, eventHandler) {
   const input = document.createElement('input');
   input.type = 'number';
   input.value = value.toString();
   input.min = minValue;
   input.addEventListener('input', eventHandler);
+  Object.assign(input.style, textboxStyles); // Apply the textboxStyles
   return input;
 }
 
