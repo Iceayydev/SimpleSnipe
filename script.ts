@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name SimpleSnipehttps://github.com/Iceayydev/SimpleSnipe/blob/main/script.ts
+// @name SimpleSnipe
 // @namespace http://tampermonkey.net/
 // @version 5.4.3
 // @description created better gui, major optimization improvements and better code readability. The next version (5.5) will include a rewrite of the sniping code, so fishcat wont be asocciated with simplesnipe. updates are in MAJOR, MINOR, PATCH format.
@@ -13,16 +13,12 @@
 /*
 
 	==UPDATE NOTES==
-- Removed RGB background. Caused too many issues.
-- Fixed setting saving.
-- Fixed ignored variables.
-- Improved readablity.
-- Reworked how some settings are handled. This is the first step to redoing the entire snipe code.
+- Rewrote functions. Simple snipe will be under the 
 
 	==UPDATE NOTES==
-	  ==PATCH .4==
-- Added text box styles.
-- Fixed a console spam issue which caused minor preformance issues.
+	  ==PATCH .1==
+- Fixed gui styles for different screen and windows sizes.
+- Changed some text.
 
 */
 
@@ -32,11 +28,11 @@ const guiStyles = {
   top: '50%',
   left: '80%',
   transform: 'translate(-50%, -50%)',
-  border: '5px solid rgba(255, 255, 255, 1)',
+  border: '5px solid rgba(255, 255, 255, 0.5)',
   borderRadius: '30px',
   padding: '20px',
   height: '400px',
-  width: '280px',
+  width: '320px',
   color: 'white',
   background: 'linear-gradient(to bottom right, purple, blue)',
 };
@@ -58,6 +54,42 @@ const textboxStyles = {
   padding: '5px',
   color: 'white',
 };
+
+/*
+
+
+
+Copyright 2023 IceayyDev
+
+Permission is hereby granted, free of charge,
+to any person obtaining a copy of this software
+and associated documentation files
+(the “Software”), to deal in the Software
+without restriction, including without limitation
+the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to
+whom the Software is furnished to do so, subject
+to the following conditions:
+
+The above copyright notice and this permission
+notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+*/
 
 // Sniper variables
 let guiContainer;
@@ -234,7 +266,7 @@ function copyToClipboard() {
   const text = 'https://discord.gg/V7XT9cuPrZ';
   navigator.clipboard.writeText(text)
   .then(() => {
-    alert('Copied to clipboard: ' + text + "\nDid you know you can change the colors by editing `background: 'linear-gradient(to bottom, purple, blue)` in the script?");
+    alert('Copied to clipboard: ' + text + "\nAlso, you can change the style of the gui in the script.");
   })
   .catch((error) => {
     console.error('Failed to copy to clipboard: ', error);
