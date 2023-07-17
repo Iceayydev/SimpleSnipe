@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name SimpleSnipe
-// @namespace http://tampermonkey.net/
-// @version 5.4.3
-// @description created better gui, major optimization improvements and better code readability. The next version (5.5) will include a rewrite of the sniping code, so fishcat wont be asocciated with simplesnipe. updates are in MAJOR, MINOR, PATCH format.
-// @author @iceayy, base sniper code by fishcat#2431
+// @namespace https://iceayy.com/simplesnipe
+// @version 5.5
+// @description Simple roblox sniper with a GUI. Includes a bunch of customization and sniper settings.
 // @match https://*.roblox.com/catalog/*
 // @match https://*.roblox.com/bundles/*
 // @grant none
