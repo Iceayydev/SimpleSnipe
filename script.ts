@@ -6,7 +6,7 @@
 // @match https://*.roblox.com/catalog/*
 // @match https://*.roblox.com/bundles/*
 // @grant none
-// @license GNU General Public License v3.0
+// @license MIT
 // ==/UserScript==
 
 /*
