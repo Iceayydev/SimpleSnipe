@@ -27,31 +27,33 @@ const guiStyles = {
   top: '50%',
   left: '80%',
   transform: 'translate(-50%, -50%)',
-  border: '5px solid rgba(255, 255, 255, 0.5)',
-  borderRadius: '30px',
+  border: '8px solid rgba(255, 242, 71, 1)', // 8px is the default border thickness. the color is RGBA by default.
+  borderRadius: '30px', // border rounding, the default its 30px.
   padding: '20px',
-  height: '400px',
-  width: '320px',
-  color: 'white',
-  background: 'linear-gradient(to bottom right, purple, blue)',
+  height: '420px', // height of the main gui.
+  width: '320px', // width of the main gui.
+  color: 'rgba(255, 242, 71, 1)', // text color for text.
+  background: 'rgba(255, 86, 232, 1)', // background color of the gui. RGBA format.
 };
 
 const buttonStyles = {
-  background: 'rgba(255, 255, 255, 0.2)',
-  border: '3px solid rgba(255, 255, 255, 0.2)',
+  background: 'rgba(255, 242, 71, 0.2)', // background color of buttons. RGBA format.
+  border: '5px solid rgba(255, 242, 71, 1)', // border thickness for buttons. default is 5, and color is in RGBA format.
+  borderRadius: '10px', // border radius for the buttons, default is 10px.
   display: 'inline-block',
   marginLeft: '5px',
-  color: 'white',
+  color: 'rgba(255, 242, 71, 1)', // color of the text inside buttons.
   padding: '5px 10px',
 };
 
 const textboxStyles = {
-  background: 'rgba(255, 255, 255, 0.2)',
-  border: '1px solid rgba(255, 255, 255, 0.2)',
+  background: 'rgba(255, 242, 71, 0.2)', // background color for text boxes. RGBA format.
+  border: '5px solid rgba(255, 242, 71, 1)', // border thickness, defualt is 5. RGBA format.
+  borderRadius: '10px', // border rounding, default is 10px.
   display: 'block',
   marginTop: '5px',
   padding: '5px',
-  color: 'white',
+  color: 'rgba(255, 242, 71, 1)', // color of the text inside the text boxes.
 };
 
 /*
