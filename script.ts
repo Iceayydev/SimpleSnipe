@@ -245,7 +245,7 @@ function snipeItem() {
   } else if (settings.check_price && Number(itemPriceElement) > maxPrice) {
     stopSniper();
     alert('Item price too high, sniper has been stopped and no item was purchased.');
-  } // Made by iceayy & fishcat, dont try and skid noob.
+  }
 }
 
 function findBuyButton() {
