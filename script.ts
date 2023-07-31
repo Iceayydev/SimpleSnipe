@@ -264,7 +264,7 @@ function checkButtonAndExecuteFunction() {
 }
 
 function copyToClipboard() {
-  const text = 'https://discord.gg/V7XT9cuPrZ';
+  const text = 'https://discord.gg/TJqDAaMZku';
   navigator.clipboard.writeText(text)
   .then(() => {
     alert('Copied to clipboard: ' + text + "\nAlso, you can change the style of the gui in the script.");
