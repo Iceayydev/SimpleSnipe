@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name SimpleSnipe
+// @author Iceayy
 // @namespace https://iceayy.com/simplesnipe
 // @version 5.5
 // @description Simple roblox sniper with a GUI. Includes a bunch of customization and sniper settings.
@@ -12,7 +13,8 @@
 /*
 
 	==UPDATE NOTES==
-- Rewrote functions. Simple snipe will be under the 
+- Rewrote functions.
+- SimpleSnipe will be 
 
 	==UPDATE NOTES==
 	  ==PATCH .1==
